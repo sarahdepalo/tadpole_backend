@@ -12,7 +12,7 @@ app.use("/auth", require("./routes/jwtAuth"));
 
 
 //Dashboard Route - for logged in users only:
-// app.use("/dashboard", require("./routes/dashboard"));
+app.use("/dashboard", require("./routes/dashboard"));
 
 app.listen(3000, () => {
     console.log("Server is running at http://localhost:3000")
