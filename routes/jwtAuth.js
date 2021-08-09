@@ -92,7 +92,7 @@ router.get("/verify", authorization, (req, res) => {
   try {
     res.json(true);
   } catch (error) {
-    console.error(error.message);
+    console.error("ERROR: ",error.message);
     res.status(500).send("Server Error");
   }
 });
